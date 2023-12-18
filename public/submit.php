@@ -15,3 +15,17 @@ echo "<center>Nội dung: <b>HT4G$out_trade_no</b><br></center>";
 
 echo "<center><img src='$qrCodeData' width='300'></center>"
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thanh toán đơn hàng</title>
+</head>
+<body>
+<style>
+    body{
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+</style>
+</body>
+</html>
+
