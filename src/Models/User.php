@@ -67,7 +67,7 @@ class User extends Model
      */
     public function lastUseTime(): string
     {
-        return $this->t == 0 ? i18n::get()->t('never used') : Tools::toDateTime($this->t);
+        return $this->t == 0 ? i18n::get()->t('Chưa từng dùng') : Tools::toDateTime($this->t);
     }
 
     /**
