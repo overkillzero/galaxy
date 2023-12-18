@@ -65,10 +65,13 @@
 																				{if $product->type == 1}
 																					{if $product->two_year_price != NULL}
 																						{number_format($product->two_year_price, 0, '.', '')}
-																					{else}	
-																						{number_format($product->month_price, 0, '.', '')}
+																					{else if $product->type == 1}	
+																						{number_format($product->month_price, 0, '.', '')}			
 																					{/if}	
 																				{/if}
+																				{if $product->type != 1}
+																					{$product->onetime_price}
+																				{/if}	
 																			</span>
 																			{if $product->type == 1}
 																				{if $product->two_year_price == NULL}
