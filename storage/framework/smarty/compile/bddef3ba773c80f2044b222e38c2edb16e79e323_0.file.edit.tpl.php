@@ -43,9 +43,9 @@ function content_657e56f5580681_31993826 (Smarty_Internal_Template $_smarty_tpl)
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
     <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-    <link href="/theme/infinity/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/theme/galaxy/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.2/jsoneditor.min.css" rel="stylesheet"
         type="text/css">
     <link href="/favicon.png" rel="shortcut icon">
@@ -98,37 +98,37 @@ function content_657e56f5580681_31993826 (Smarty_Internal_Template $_smarty_tpl)
                                 <label class="form-label required" for="node_flag">Cờ máy chủ</label>
                                 <select class="form-select mb-5" id="node_flag">
                                     <option value="vietnam"
-                                        data-kt-select2-country="/theme/infinity/media/flags/vn.svg">Việt Nam
+                                        data-kt-select2-country="/theme/galaxy/media/flags/vn.svg">Việt Nam
                                     </option>
                                     <option value="singapore"
-                                        data-kt-select2-country="/theme/infinity/media/flags/singapore.svg">Singapore
+                                        data-kt-select2-country="/theme/galaxy/media/flags/singapore.svg">Singapore
                                     </option>
                                     <option value="japan"
-                                        data-kt-select2-country="/theme/infinity/media/flags/japan.svg">Nhật Bản
+                                        data-kt-select2-country="/theme/galaxy/media/flags/japan.svg">Nhật Bản
                                     </option>
                                     <option value="united-states"
-                                        data-kt-select2-country="/theme/infinity/media/flags/united-states.svg">Hoa
+                                        data-kt-select2-country="/theme/galaxy/media/flags/united-states.svg">Hoa
                                         Kỳ</option>
                                     <option value="united-kingdom"
-                                        data-kt-select2-country="/theme/infinity/media/flags/united-kingdom.svg">
+                                        data-kt-select2-country="/theme/galaxy/media/flags/united-kingdom.svg">
                                         Vương Quốc Anh</option>
                                     <option value="canada"
-                                        data-kt-select2-country="/theme/infinity/media/flags/canada.svg">Canada
+                                        data-kt-select2-country="/theme/galaxy/media/flags/canada.svg">Canada
                                     </option>
                                     <option value="hong-kong"
-                                        data-kt-select2-country="/theme/infinity/media/flags/hong-kong.svg">HongKong
+                                        data-kt-select2-country="/theme/galaxy/media/flags/hong-kong.svg">HongKong
                                     </option>
                                     <option value="south-korea"
-                                        data-kt-select2-country="/theme/infinity/media/flags/south-korea.svg">Hàn
+                                        data-kt-select2-country="/theme/galaxy/media/flags/south-korea.svg">Hàn
                                         Quốc</option>
                                     <option value="australia"
-                                        data-kt-select2-country="/theme/infinity/media/flags/australia.svg">Úc
+                                        data-kt-select2-country="/theme/galaxy/media/flags/australia.svg">Úc
                                     </option>
                                     <option value="brazil"
-                                        data-kt-select2-country="/theme/infinity/media/flags/brazil.svg">Brazil
+                                        data-kt-select2-country="/theme/galaxy/media/flags/brazil.svg">Brazil
                                     </option>
                                     <option value="france"
-                                        data-kt-select2-country="/theme/infinity/media/flags/france.svg">Pháp
+                                        data-kt-select2-country="/theme/galaxy/media/flags/france.svg">Pháp
                                     </option>
                                 </select>
                                 <label class="form-label required" for="node_type">Loại máy chủ</label>

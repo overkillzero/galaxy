@@ -30,8 +30,8 @@ function content_656fbeca8c9138_77991852 (Smarty_Internal_Template $_smarty_tpl)
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 		<link href="/favicon.png" rel="shortcut icon">
-		<link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body id="kt_body" class="app-blank app-blank bgi-size-cover bgi-position-center bgi-no-repeat">
 		<?php echo '<script'; ?>
@@ -39,9 +39,9 @@ function content_656fbeca8c9138_77991852 (Smarty_Internal_Template $_smarty_tpl)
 >
 
 		<div class="d-flex flex-column flex-root" id="kt_app_root">
-	<style>body { background-image: url(<?php if ((is_null($_smarty_tpl->tpl_vars['config']->value['website_auth_background_image']))) {?>'/theme/infinity/media/auth/bg4.jpg'<?php } else {
+	<style>body { background-image: url(<?php if ((is_null($_smarty_tpl->tpl_vars['config']->value['website_auth_background_image']))) {?>'/theme/galaxy/media/auth/bg4.jpg'<?php } else {
 echo $_smarty_tpl->tpl_vars['config']->value['website_auth_background_image'];
-}?>); } [data-bs-theme="dark"] body { background-image: url(<?php if ((is_null($_smarty_tpl->tpl_vars['config']->value['website_auth_background_image']))) {?>'/theme/infinity/media/auth/bg4-dark.jpg'<?php } else {
+}?>); } [data-bs-theme="dark"] body { background-image: url(<?php if ((is_null($_smarty_tpl->tpl_vars['config']->value['website_auth_background_image']))) {?>'/theme/galaxy/media/auth/bg4-dark.jpg'<?php } else {
 echo $_smarty_tpl->tpl_vars['config']->value['website_auth_background_image'];
 }?>); }</style>
 			<div class="d-flex flex-column flex-column-fluid flex-lg-row">
@@ -91,10 +91,10 @@ echo $_smarty_tpl->tpl_vars['config']->value['website_auth_background_image'];
 			</div>
 		</div>
 		<?php echo '<script'; ?>
- src="/theme/infinity/plugins/global/plugins.bundle.js"><?php echo '</script'; ?>
+ src="/theme/galaxy/plugins/global/plugins.bundle.js"><?php echo '</script'; ?>
 >
 		<?php echo '<script'; ?>
- src="/theme/infinity/js/scripts.bundle.js"><?php echo '</script'; ?>
+ src="/theme/galaxy/js/scripts.bundle.js"><?php echo '</script'; ?>
 >
 		<?php echo '<script'; ?>
  src="/js/reset-password.js"><?php echo '</script'; ?>

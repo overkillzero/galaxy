@@ -45,9 +45,9 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/www/wwwroot/sieuthi5g.com/v
 	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 	<meta http-equiv="expires" content="0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-	<link href="/theme/infinity/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/theme/galaxy/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
@@ -301,7 +301,7 @@ $_smarty_tpl->tpl_vars['an']->do_else = false;
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-30px symbol-md-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['an']->value->client;?>
+														style="background-image:url(/theme/galaxy/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['an']->value->client;?>
 .png)">
 													</div>
 												</div>
@@ -328,7 +328,7 @@ $_smarty_tpl->tpl_vars['ios']->do_else = false;
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-30px symbol-md-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['ios']->value->client;?>
+														style="background-image:url(/theme/galaxy/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['ios']->value->client;?>
 .png)">
 													</div>
 												</div>
@@ -355,7 +355,7 @@ $_smarty_tpl->tpl_vars['mac']->do_else = false;
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-30px symbol-md-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['mac']->value->client;?>
+														style="background-image:url(/theme/galaxy/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['mac']->value->client;?>
 .png)">
 													</div>
 												</div>
@@ -382,7 +382,7 @@ $_smarty_tpl->tpl_vars['win']->do_else = false;
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['win']->value->client;?>
+														style="background-image:url(/theme/galaxy/media/app_logo/<?php echo $_smarty_tpl->tpl_vars['win']->value->client;?>
 .png)">
 													</div>
 												</div>
@@ -428,7 +428,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 									</div>
 									<div class="col-5 pt-10">
 										<div class="bgi-no-repeat bgi-size-contain bgi-position-x-end h-225px"
-											style="background-image:url('/theme/infinity/media/svg/illustrations/easy/5.svg');">
+											style="background-image:url('/theme/galaxy/media/svg/illustrations/easy/5.svg');">
 										</div>
 									</div>
 								</div>

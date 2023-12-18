@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 		
 		
-		<link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		
 	</head>
 	
@@ -22,7 +22,7 @@
 		
 		<div class="d-flex flex-column flex-root" id="kt_app_root">
 			
-			<style>body { background-image: url('theme/infinity/media/auth/bg7.jpg'); } [data-theme="dark"] body { background-image: url('theme/infinity/media/auth/bg7-dark.jpg'); }</style>
+			<style>body { background-image: url('theme/galaxy/media/auth/bg7.jpg'); } [data-theme="dark"] body { background-image: url('theme/galaxy/media/auth/bg7-dark.jpg'); }</style>
 			
 			
 			<div class="d-flex flex-column flex-center flex-column-fluid">
@@ -39,8 +39,8 @@
 							
 							
 							<div class="mb-11">
-								<img src="/theme/infinity/media/auth/500-error.png" class="mw-100 mh-300px theme-light-show" alt="" />
-								<img src="/theme/infinity/media/auth/500-error-dark.png" class="mw-100 mh-300px theme-dark-show" alt="" />
+								<img src="/theme/galaxy/media/auth/500-error.png" class="mw-100 mh-300px theme-light-show" alt="" />
+								<img src="/theme/galaxy/media/auth/500-error-dark.png" class="mw-100 mh-300px theme-dark-show" alt="" />
 							</div>
 							
 							
@@ -60,8 +60,8 @@
 		
 		<script>var hostUrl = "assets/";</script>
 		
-		<script src="/theme/infinity/plugins/global/plugins.bundle.js"></script>
-		<script src="/theme/infinity/js/scripts.bundle.js"></script>
+		<script src="/theme/galaxy/plugins/global/plugins.bundle.js"></script>
+		<script src="/theme/galaxy/js/scripts.bundle.js"></script>
 		
 		
 	</body>

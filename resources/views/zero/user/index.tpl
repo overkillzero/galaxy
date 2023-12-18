@@ -16,9 +16,9 @@
 	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 	<meta http-equiv="expires" content="0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-	<link href="/theme/infinity/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/theme/galaxy/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="/favicon.png" rel="shortcut icon">
 	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
@@ -241,7 +241,7 @@
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-30px symbol-md-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/{$an->client}.png)">
+														style="background-image:url(/theme/galaxy/media/app_logo/{$an->client}.png)">
 													</div>
 												</div>
 												<div class="d-flex flex-column flex-grow-1 me-2">
@@ -258,7 +258,7 @@
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-30px symbol-md-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/{$ios->client}.png)">
+														style="background-image:url(/theme/galaxy/media/app_logo/{$ios->client}.png)">
 													</div>
 												</div>
 												<div class="d-flex flex-column flex-grow-1 mr-2">
@@ -275,7 +275,7 @@
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-30px symbol-md-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/{$mac->client}.png)">
+														style="background-image:url(/theme/galaxy/media/app_logo/{$mac->client}.png)">
 													</div>
 												</div>
 												<div class="d-flex flex-column flex-grow-1 mr-2">
@@ -292,7 +292,7 @@
 											<div class="d-flex align-items-center flex-wrap mb-8">
 												<div class="symbol symbol-40px symbol-light me-5">
 													<div class="symbol-label"
-														style="background-image:url(/theme/infinity/media/app_logo/{$win->client}.png)">
+														style="background-image:url(/theme/galaxy/media/app_logo/{$win->client}.png)">
 													</div>
 												</div>
 												<div class="d-flex flex-column flex-grow-1 mr-2">
@@ -330,7 +330,7 @@
 									</div>
 									<div class="col-5 pt-10">
 										<div class="bgi-no-repeat bgi-size-contain bgi-position-x-end h-225px"
-											style="background-image:url('/theme/infinity/media/svg/illustrations/easy/5.svg');">
+											style="background-image:url('/theme/galaxy/media/svg/illustrations/easy/5.svg');">
 										</div>
 									</div>
 								</div>

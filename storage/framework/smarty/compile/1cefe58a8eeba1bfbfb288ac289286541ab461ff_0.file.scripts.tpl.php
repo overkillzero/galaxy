@@ -23,13 +23,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
 ),false)) {
 function content_656e891ef32d65_27380509 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
- src="/theme/infinity/plugins/global/plugins.bundle.js"><?php echo '</script'; ?>
+ src="/theme/galaxy/plugins/global/plugins.bundle.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="/theme/infinity/js/scripts.bundle.js"><?php echo '</script'; ?>
+ src="/theme/galaxy/js/scripts.bundle.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="/theme/infinity/plugins/custom/datatables/datatables.bundle.js"><?php echo '</script'; ?>
+ src="/theme/galaxy/plugins/custom/datatables/datatables.bundle.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
  src="/js/datatable.min.js"><?php echo '</script'; ?>

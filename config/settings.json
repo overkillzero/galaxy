@@ -12,11 +12,11 @@
     {
         "id": null,
         "item": "website_name",
-        "value": "InfinityPanel",
+        "value": "GalaxyPanel",
         "class": "website",
         "is_public": "1",
         "type": "string",
-        "default": "InfinityPanel",
+        "default": "GalaxyPanel",
         "mark": "Tên trang web"
     },
     {

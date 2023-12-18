@@ -50,9 +50,9 @@ function content_657dd0f4df0ca6_05512681 (Smarty_Internal_Template $_smarty_tpl)
         <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
         <meta http-equiv="expires" content="0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-        <link href="/theme/infinity/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-        <link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-        <link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/galaxy/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/jsoneditor/dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
         <?php echo '<script'; ?>
  src="https://cdn.jsdelivr.net/npm/jsoneditor/dist/jsoneditor.min.js"><?php echo '</script'; ?>

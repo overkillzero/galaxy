@@ -1,6 +1,6 @@
-<script src="/theme/infinity/plugins/global/plugins.bundle.js"></script>
-<script src="/theme/infinity/js/scripts.bundle.js"></script>
-<script src="/theme/infinity/plugins/custom/datatables/datatables.bundle.js"></script>
+<script src="/theme/galaxy/plugins/global/plugins.bundle.js"></script>
+<script src="/theme/galaxy/js/scripts.bundle.js"></script>
+<script src="/theme/galaxy/plugins/custom/datatables/datatables.bundle.js"></script>
 <script>
     // get result 
 function getResult(titles, texts, icons) {

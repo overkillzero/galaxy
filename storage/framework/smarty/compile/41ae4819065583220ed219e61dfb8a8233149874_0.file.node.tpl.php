@@ -42,9 +42,9 @@ function content_656e89255c6768_18948467 (Smarty_Internal_Template $_smarty_tpl)
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
     <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-    <link href="/theme/infinity/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/theme/galaxy/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
     <link href="/favicon.png" rel="shortcut icon">
     <link href="/apple-touch-icon.png" rel="apple-touch-icon">
 </head>
@@ -106,7 +106,7 @@ $_smarty_tpl->tpl_vars['server']->do_else = false;
                                                                 class="w-100 rounded-3 bg-light bg-opacity-75 px-10 py-5 d-flex flex-wrap">
                                                                 <div class="d-flex flex-column flex-grow-1">
                                                                     <img alt="image" class="rounded-circle" width="35"
-                                                                        src="/theme/infinity/media/flags/<?php echo $_smarty_tpl->tpl_vars['server']->value->node_flag;?>
+                                                                        src="/theme/galaxy/media/flags/<?php echo $_smarty_tpl->tpl_vars['server']->value->node_flag;?>
 .svg">
                                                                 </div>
                                                                 <div class="fw-bold fs-5">

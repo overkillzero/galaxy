@@ -15,9 +15,9 @@
         <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
         <meta http-equiv="expires" content="0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-        <link href="/theme/infinity/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-        <link href="/theme/infinity/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-        <link href="/theme/infinity/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/galaxy/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/galaxy/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="/theme/galaxy/css/style.bundle.css" rel="stylesheet" type="text/css" />
         <link href="/favicon.png" rel="shortcut icon">
         <link href="/apple-touch-icon.png" rel="apple-touch-icon">
     </head>
@@ -407,9 +407,9 @@
                                 <label class="col-form-label fw-bold" for="withdraw_method">type:</label>
                                 <select class="form-select" id="withdraw_method" data-style="btn-primary">	
                                                                             
-                                    <option value="MOMO" data-kt-select2-image="/theme/infinity/media/payment_logo/momo.svg">MOMO</option>
-                                    <option value="BANK" data-kt-select2-image="/theme/infinity/media/payment_logo/bank.svg">Ngân hàng</option>
-                                    <option value="USDT" data-kt-select2-image="/theme/infinity/media/payment_logo/tether.svg">USDT</option>
+                                    <option value="MOMO" data-kt-select2-image="/theme/galaxy/media/payment_logo/momo.svg">MOMO</option>
+                                    <option value="BANK" data-kt-select2-image="/theme/galaxy/media/payment_logo/bank.svg">Ngân hàng</option>
+                                    <option value="USDT" data-kt-select2-image="/theme/galaxy/media/payment_logo/tether.svg">USDT</option>
                                 </select>
                             </div>
                         </form>

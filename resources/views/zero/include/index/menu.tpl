@@ -115,14 +115,14 @@
                                         <div class="menu-item px-3 my-0">
                                             <a href="#" class="menu-link px-3 py-2 btn btn-active-light-primary" onclick="changeCurrentLanguage('en-US')">
                                                 <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="/theme/infinity/media/flags/united-states.svg" alt="" />
+                                                    <img class="rounded-1" src="/theme/galaxy/media/flags/united-states.svg" alt="" />
                                                 </span>Tiếng Việt
                                             </a>
                                         </div>	
                                         <div class="menu-item px-3 my-0">
                                             <a href="#" class="menu-link px-3 py-2 btn btn-active-light-primary" onclick="changeCurrentLanguage('zh-CN')">
                                                 <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="/theme/infinity/media/flags/china.svg" alt="" />
+                                                    <img class="rounded-1" src="/theme/galaxy/media/flags/china.svg" alt="" />
                                                 </span>Tiếng Anh
                                             </a>
                                         </div>										

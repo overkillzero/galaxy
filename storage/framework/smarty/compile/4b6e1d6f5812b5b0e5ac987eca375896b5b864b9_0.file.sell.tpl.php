@@ -44,11 +44,11 @@ function content_657dd0f4e38019_08718477 (Smarty_Internal_Template $_smarty_tpl)
                                                                     </select>
                                                                     <label class="form-label" for="currency_unit">Đơn vị tiền tệ</label>
                                                                     <select class="form-select mb-5" id="currency_unit">
-                                                                        <option value="VND" data-kt-select2-country="/theme/infinity/media/flags/vn.svg">VND</option>
-                                                                        <option value="USD" data-kt-select2-country="/theme/infinity/media/flags/united-states.svg">USD</option>
-                                                                        <option value="JPY" data-kt-select2-country="/theme/infinity/media/flags/japan.svg">JPY</option>
-                                                                        <option value="SGD" data-kt-select2-country="/theme/infinity/media/flags/singapore.svg">SGD</option>
-                                                                        <option value="EUR" data-kt-select2-country="/theme/infinity/media/flags/european-union.svg">EUR</option>
+                                                                        <option value="VND" data-kt-select2-country="/theme/galaxy/media/flags/vn.svg">VND</option>
+                                                                        <option value="USD" data-kt-select2-country="/theme/galaxy/media/flags/united-states.svg">USD</option>
+                                                                        <option value="JPY" data-kt-select2-country="/theme/galaxy/media/flags/japan.svg">JPY</option>
+                                                                        <option value="SGD" data-kt-select2-country="/theme/galaxy/media/flags/singapore.svg">SGD</option>
+                                                                        <option value="EUR" data-kt-select2-country="/theme/galaxy/media/flags/european-union.svg">EUR</option>
                                                                     </select>
                                                                     <label class="form-label" for="currency_exchange_rate">Tỉ lệ quy đổi</label>
                                                                     <input class="form-control mb-5" id="currency_exchange_rate" value="<?php echo $_smarty_tpl->tpl_vars['settings']->value['currency_exchange_rate'];?>
@@ -77,7 +77,7 @@ function content_657dd0f4e38019_08718477 (Smarty_Internal_Template $_smarty_tpl)
                                                                     </select>
                                                                     <label class="form-label" for="withdraw_method">Phương thức rút tiền</label>
                                                                     <select class="form-select mb-5" id="withdraw_method">
-                                                                        <option value="USDT" data-kt-select2-image="/theme/infinity/media/payment_logo/tether.svg">USDT</option>
+                                                                        <option value="USDT" data-kt-select2-image="/theme/galaxy/media/payment_logo/tether.svg">USDT</option>
                                                                     </select>
                                                                     <label class="form-label" for="withdraw_minimum_amount">Số tiền rút tối thiểu</label>
                                                                     <input class="form-control mb-5" id="withdraw_minimum_amount" value="<?php echo $_smarty_tpl->tpl_vars['settings']->value['withdraw_minimum_amount'];?>
