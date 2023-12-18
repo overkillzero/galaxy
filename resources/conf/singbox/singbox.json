@@ -1,0 +1,93 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "rules": [
+      {
+        "domain_suffix": [".arpa.", ".arpa"],
+        "server": "dns-block"
+      }
+    ],
+    "servers": [
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "dns-direct",
+        "strategy": "prefer_ipv6",
+        "tag": "dns-remote"
+      },
+      {
+        "address": "https://223.5.5.5/dns-query",
+        "address_resolver": "dns-local",
+        "detour": "direct",
+        "strategy": "prefer_ipv6",
+        "tag": "dns-direct"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "dns-local"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "dns-block"
+      }
+    ]
+  },
+  "experimental": {
+    "clash_api": {
+      "cache_file": "",
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "../files/yacd",
+      "store_selected": true
+    }
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
+      "mtu": 1358,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "gvisor",
+      "endpoint_independent_nat": true,
+      "sniff": true
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "Proxy",
+      "type": "selector",
+      "outbounds": ["Auto"]
+    },
+    {
+      "tag": "Auto",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://detectportal.firefox.com/success.txt",
+      "interval": "60s",
+      "tolerance": 0
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "Proxy",
+    "rules": [
+      {
+        "geoip": ["!cn"],
+        "geosite": ["geolocation-!cn"],
+        "outbound": "Proxy"
+      },
+      {
+        "ip_cidr": ["8.8.8.8"],
+        "outbound": "Proxy"
+      }
+    ]
+  }
+}

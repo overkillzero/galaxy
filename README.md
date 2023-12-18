@@ -1,1 +1,1 @@
-# galaxy
+# Galaxy Panel v1.1.1
