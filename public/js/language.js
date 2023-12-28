@@ -17,10 +17,10 @@ i18next.use(i18nextBrowserLanguageDetector).init({
     en: {
       translation: {
         "copy success": "Sao chép thành công",
-        "monthly fee": "Giá 1 tháng",
-        "quarterly fee": "Giá 3 tháng",
-        "semi annua fee": "Giá 6 tháng",
-        "annual fee": "Giá 1 năm",
+        "monthly fee": "Một tháng",
+        "quarterly fee": "Ba tháng",
+        "semi annua fee": "Sáu tháng",
+        "annual fee": "Một năm",
         "biennial fee": "Vĩnh Viễn",
         "onetime fee": "Dài hạn",
         "insufficient permissions": "Không có quyền làm việc này",
