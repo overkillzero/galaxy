@@ -56,7 +56,7 @@
                                                             <input class="form-control mb-5" id="year_price" name="year_price" type="number" placeholder="Giá 1 năm" value="">
                                                         </div>
                                                         <div class="col-4">
-                                                            <input class="form-control mb-5" id="two_year_price" name="two_year_price" type="number" placeholder="Giá 2 năm" value="">
+                                                            <input class="form-control mb-5" id="two_year_price" name="two_year_price" type="number" placeholder="Giá Vĩnh Viễn" value="">
                                                         </div>
                                                         <div class="col-4">
                                                             <input class="form-control mb-5" data-bs-toggle="tooltip" title="Giá bán gói dùng không thời hạn" id="onetime_price" name="onetime_price" type="number" placeholder="Giá không thời hạn" value="">

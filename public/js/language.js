@@ -21,7 +21,7 @@ i18next.use(i18nextBrowserLanguageDetector).init({
         "quarterly fee": "Giá 3 tháng",
         "semi annua fee": "Giá 6 tháng",
         "annual fee": "Giá 1 năm",
-        "biennial fee": "Giá 2 năm",
+        "biennial fee": "Vĩnh Viễn",
         "onetime fee": "Dài hạn",
         "insufficient permissions": "Không có quyền làm việc này",
         "confirm importing subscription link":
