@@ -131,7 +131,7 @@
 											{if $user->node_iplimit === 0 }Không giới hạn{else}{$user->node_iplimit}{/if}
 										</a>
 										<span class="text-muted fw-semibold d-block">
-											Sử dùng gần nhất lúc:&nbsp;{$user->lastUseTime()}
+											Sử dụng gần nhất lúc:&nbsp;{$user->lastUseTime()}
 										</span>
 									</div>
 								</div>
