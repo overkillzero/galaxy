@@ -1,5 +1,5 @@
 # Galaxy Panel v1.1.1
-#Cron
+# 0Cron
 ```
 php /www/wwwroot/link_web/xcat Job CheckJob
 php /www/wwwroot/link_web/xcat Job DailyJob  
