@@ -15,7 +15,7 @@ mysql -u $dbuser -p$dbpass $dbname < ./sql/galaxy.sql
 cp ./config/.config.php.o ./config/.config.php
 cp ./config/settings.json.o ./config/settings.json
 
-sed -i "s|https://localhost.com|'${web}';|" ./config/settings.json
+sed -i "s|https://localhost.com|${web}|" ./config/settings.json
 sed -i "s|\(\$_ENV\['db_database'\] = \)'[^']*';|\1'${dbname}';|" ./config/.config.php
 sed -i "s|\(\$_ENV\['db_username'\] = \)'[^']*';|\1'${dbuser}';|" ./config/.config.php
 sed -i "s|\(\$_ENV\['db_password'\] = \)'[^']*';|\1'${dbpass}';|" ./config/.config.php
