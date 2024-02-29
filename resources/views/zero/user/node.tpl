@@ -328,8 +328,10 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-light fw-bold" data-bs-dismiss="modal">Hủy
-                </button>
+                <button type="button"
+                    style="padding: 10px 15px; margin-left: 1%; background-color: #0077cc; border-radius: 5px; color: #fff; border: none;"
+                    onclick="copyTrojanConfig()">Sao chép cấu hình</button>
+                <button type="button" class="btn btn-light fw-bold" data-bs-dismiss="modal">Đóng</button>
             </div>
         </div>
     </div>
@@ -433,6 +435,21 @@
     }
     function b64EncodeUnicode(str) {
         return btoa(unescape(encodeURIComponent(str)));
+    }
+
+    function copyTrojanConfig() {
+        var address = document.getElementById('zero_modal_trojan_node_info_address').innerText;
+        var port = document.getElementById('zero_modal_trojan_node_info_port').innerText;
+        var uuid = document.getElementById('zero_modal_trojan_node_info_uuid').innerText;
+        var sni = document.getElementById('zero_modal_trojan_node_info_sni').innerText;
+        var remark = document.getElementById('zero_modal_trojan_node_info_remark').innerText;
+        var security = document.getElementById('zero_modal_trojan_node_info_security').innerText;
+
+        var encodedConfig = "trojan://" + uuid + "@" + address + ":" + port + "?security=" + security +
+            "&headerType=none&type=tcp&sni=" + sni + "#" + remark + "\n";
+        navigator.clipboard.writeText(encodedConfig).then(function() {
+            alert('Sao chép thành công!');
+        }).catch(function(err) {});
     }
 </script>
 </body>
