@@ -33,10 +33,10 @@
 							<div class="card-header border-0">
 								<div class="card-title fs-3 fw-bolder">Thông tin gói dịch vụ</div>
 								<div class="card-toolbar">
-									<button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+									<button class="btn btn-primary btn-sm" data-bs-toggle="modal" style="height: 40px ;"
 										data-bs-target="#zero_modal_show_subscribe_info"><i
-											class="bi bi-file-earmark-arrow-down"></i>Nhấp để đồng bộ máy chủ</button>
-									<button class="btn btn-primary btn-sm d-none" type="button"
+											class="bi bi-file-earmark-arrow-down"></i>Nhấp để đồng bộ máy chủ</button>											
+									<button class="btn btn-primary btn-sm d-none" type="button" style="height: 40px;"
 										data-bs-toggle="offcanvas" data-bs-target="#zero_canvas_show_subscribe_info"><i
 											class="bi bi-file-earmark-arrow-down"></i>Nhấp để đồng bộ máy chủ</button>
 								</div>
