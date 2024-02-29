@@ -38,7 +38,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-toolbar">
-                                                        <a class="btn btn-outline copy-text hover-scale" data-clipboard-text="{$subInfo}">Sao chép liên kết đăng kí</a>
+                                                        <a class="btn btn-outline copy-text hover-scale" data-clipboard-text="{$subInfo}">Sao chép liên kết đăng ký</a>
                                                     </div>
                                                 </div>
                                                 <div class="card-body">                                                   

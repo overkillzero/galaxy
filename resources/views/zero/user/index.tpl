@@ -399,7 +399,7 @@
 		<div class="modal-content shadow-lg">
 			<div class="modal-body">
 				<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 copy-text hover-scale"
-					data-clipboard-text="{$subInfo}">Sao chép liên kết đăng kí</a>
+					data-clipboard-text="{$subInfo}">Sao chép liên kết đăng ký</a>
 				<a class="btn btn-outline btn-active-light-primary d-flex flex-column hover-scale mb-1"
 					data-bs-toggle="modal" data-bs-target="#zero_modal_show_subscribe_qrcode">Tạo mã QR đăng kí</a>
 				<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
@@ -428,7 +428,7 @@
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="zero_canvas_show_subscribe_info">
 	<div class="offcanvas-body">
 		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 copy-text hover-scale"
-			data-clipboard-text="{$subInfo}">Sao chép liên kết đăng kí</a>
+			data-clipboard-text="{$subInfo}">Sao chép liên kết đăng ký</a>
 		<a class="btn btn-outline btn-active-light-primary d-flex flex-column hover-scale mb-1" data-bs-toggle="modal"
 			data-bs-target="#zero_modal_show_subscribe_qrcode">Tạo mã QR đăng kí</a>
 		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
