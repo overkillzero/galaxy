@@ -63,13 +63,22 @@ class SingBox
     public static function buildVmess($server)
     {
         $node_info = [
+            'domain_strategy'      => '',
             'tag'                  => $server['remark'],
-            'type'                 => 'vmess',
             'server'               => $server['address'],
             'server_port'          => (int)$server['port'],
-            'uuid'                 => $server['uuid'],     
+            'uuid'                 => $server['uuid'],
+            'type'                 => 'vmess',
             'security'             => 'auto',
             'alter_id'             => 0,
+            'global_padding'       => false,
+            'authenticated_length' => true,
+            'packet_encoding'      => '',
+            'multiplex'            => [
+                'enabled'     => false,
+                'protocol'    => 'smux',
+                'max_streams' => 32,
+            ],
         ];
         if ($server['security'] == 'tls') {
             $tls = [
@@ -91,11 +100,10 @@ class SingBox
             $ws = [
                 'transport' => [
                     'type'    => 'ws',
+                    'path'    => $server['path'],
                     'headers' => [
                         'Host' => $server['host'],
-                    ],
-                    'max_early_data'=>  2048,
-                    'early_data_header_name' => 'Sec-WebSocket-Protocol'
+                    ]
                 ]
             ];
             $position = array_search('packet_encoding', array_keys($node_info)) + 1;
@@ -193,15 +201,25 @@ class SingBox
     public static function buildTrojan($server)
     {
         $node_info = [
+            'domain_strategy' => '',
             'tag'             => $server['remark'],
             'server'          => $server['address'],
             'server_port'     => (int)$server['port'],
             'password'        => $server['uuid'],
             'type'            => 'trojan',
             'tls'             => [
-                'enabled' => true,               
-                'insecure' => true,
+                'enabled' => true,
                 'server_name' => $server['sni'],
+                'insecure' => true,
+                'utls' => [
+                    'enabled' => false,
+                    'fingerprint' => 'chrome',
+                ],
+            ],
+            'multiplex' => [
+                'enabled' => false,
+                'protocol' => 'smux',
+                'max_streams' => 32,
             ],
         ];
 

@@ -1,35 +1,41 @@
 {
-  "log": { "level": "info", "timestamp": true },
-  "dns": {
-    "servers": [
-      { "tag": "proxyDns", "address": "8.8.8.8", "detour": "HT4GVPN" },
-      {
-        "tag": "localDns",
-        "address": "local",
-        "strategy": "ipv4_only",
-        "detour": "direct"
-      },
-      { "tag": "block", "address": "rcode://success" }
-    ],
-    "rules": [
-      { "outbound": "any", "server": "localDns", "disable_cache": true },
-      { "query_type": ["A", "AAAA"], "server": "HT4GVPN" }
-    ],
-    "independent_cache": true,
-    "strategy": "ipv4_only"
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
   },
-  "route": {
-    "auto_detect_interface": true,
-    "override_android_vpn": true,
-    "final": "HT4GVPN",
+  "dns": {
     "rules": [
-      { "protocol": "dns", "outbound": "dns-out" },
-      { "inbound": ["dns-in"], "outbound": "dns-out" },
-      { "outbound": "dns-out", "port": [53] },
       {
-        "ip_cidr": ["224.0.0.0/3", "ff00::/8"],
-        "outbound": "block",
-        "source_ip_cidr": ["224.0.0.0/3", "ff00::/8"]
+        "domain_suffix": [
+          ".arpa.",
+          ".arpa"
+        ],
+        "server": "dns-block"
+      }
+    ],
+    "servers": [
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "dns-direct",
+        "strategy": "prefer_ipv6",
+        "tag": "dns-remote"
+      },
+      {
+        "address": "https://223.5.5.5/dns-query",
+        "address_resolver": "dns-local",
+        "detour": "direct",
+        "strategy": "prefer_ipv6",
+        "tag": "dns-direct"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "dns-local"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "dns-block"
       }
     ]
   },
@@ -39,46 +45,118 @@
       "tag": "tun-in",
       "interface_name": "tun0",
       "inet4_address": "172.19.0.1/30",
-      "mtu": 1300,
+      "inet6_address": "fdfe:dcba:9876::1/126",
+      "mtu": 1358,
       "auto_route": true,
       "strict_route": true,
-      "stack": "system",
-      "endpoint_independent_nat": false,
-      "sniff": false
-    },
-    {
-      "listen": "0.0.0.0",
-      "listen_port": 2080,
-      "sniff": false,
-      "tag": "mixed-in",
-      "type": "mixed"
+      "stack": "gvisor",
+      "endpoint_independent_nat": true,
+      "sniff": true
     }
   ],
-  "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "",
-      "cache_id": "",
-      "store_fakeip": false
-    }
-  },
   "outbounds": [
     {
-      "tag": "HT4GVPN",
+      "tag": "Proxy",
       "type": "selector",
-      "default": "AUTO",
       "outbounds": [
-        "AUTO"
+        "Auto"
       ]
     },
     {
-      "tag": "AUTO",
+      "tag": "Auto",
       "type": "urltest",
       "outbounds": [
-      ]
+        
+      ],
+      "url": "https://detectportal.firefox.com/success.txt",
+      "interval": "60s",
+      "tolerance": 0
     },
-    { "tag": "direct", "type": "direct" },
-    { "tag": "block", "type": "block" },
-    { "tag": "dns-out", "type": "dns" }
-  ]
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "bypass",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "Proxy",
+    "rules": [
+      {
+        "geoip": [
+          "!cn"
+        ],
+        "geosite": [
+          "geolocation-!cn"
+        ],
+        "outbound": "Proxy"
+      },
+      {
+        "geoip": [
+          "cn"
+        ],
+        "geosite": [
+          "geolocation-cn"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "port": [
+          3478,
+          4244,
+          5222,
+          5223,
+          5242,
+          45395,
+          50318,
+          59234
+        ],
+        "geoip": [
+          "facebook"
+        ],
+        "outbound": "bypass"
+      },
+      {
+        "ip_cidr": [
+          "8.8.8.8"
+        ],
+        "outbound": "Proxy"
+      },
+      {
+        "inbound": [
+          "dns-in"
+        ],
+        "outbound": "dns-out"
+      },
+      {
+        "outbound": "dns-out",
+        "port": [
+          53
+        ]
+      },
+      {
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "outbound": "block",
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ]
+      }
+    ]
+  }
 }
