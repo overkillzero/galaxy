@@ -670,6 +670,7 @@ function oneclickImport(client, subLink) {
     quantumultx: `quantumult-x:///add-resource?remote-resource=${encodeURIComponent(
       JSON.stringify(quanx_config)
     )}`,
+    streisand: `streisand://import/${encodeURIComponent(subLink)}&name=${encodeURIComponent(webName)}`,
     v2rayng: `v2rayng://install-config?url=${encodeURIComponent(subLink)}&name=${encodeURIComponent(webName)}`,
     singbox: `sing-box://import-remote-profile?url=${encodeURIComponent(
       subLink

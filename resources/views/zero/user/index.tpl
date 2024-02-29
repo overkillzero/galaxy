@@ -79,7 +79,7 @@
 											{if $user->class >= 1}
 												<span style="display:none">Hạn sử dụng:&nbsp;<span
 														id="user_class_expired_time"></span></span>
-											{else if $user->class <= 0} 
+											{else if $user->class <= 0}
 												<!--<span class="counter">Hạn sử dụng:&nbsp;Chưa mua
 													gói</span>-->
 											{/if}
@@ -128,7 +128,9 @@
 									<div class="d-flex flex-column flex-grow-1 mr-2">
 										<a class="fw-bolder text-gray-800 fs-lg mb-1">
 											IP Trực tuyến:&nbsp;{$user->onlineIPCount()} /
-											{if $user->node_iplimit === 0 }Không giới hạn{else}{$user->node_iplimit}{/if}
+											{if $user->node_iplimit === 0 }Không giới
+											hạn{else}{$user->node_iplimit}
+											{/if}
 										</a>
 										<span class="text-muted fw-semibold d-block">
 											Sử dụng gần nhất lúc:&nbsp;{$user->lastUseTime()}
@@ -166,8 +168,10 @@
 							<div class="card-header">
 								<div class="card-title  fw-bolder fs-3">Chi tiết sử dụng</div>
 								<div class="card-toolbar">
-									<span
-										class="badge badge-light-primary badge fs-4 fw-semibold">Tốc độ giới hạn:{if $user->node_speedlimit == 0} Không giới hạn{else}{$user->node_speedlimit}Mbps{/if}</span>
+									<span class="badge badge-light-primary badge fs-4 fw-semibold">Tốc độ giới
+										hạn:{if $user->node_speedlimit == 0} Không giới
+										hạn{else}{$user->node_speedlimit}Mbps
+										{/if}</span>
 								</div>
 							</div>
 							<div class="card-body d-flex flex-column pt-0">
@@ -314,14 +318,16 @@
 								<div class="row align-items-center h-100">
 									<div class="col-7 ps-xl-13">
 										<div class="text-white mb-6 pt-6">
-											<span
-												class="fs-h4 fw-bold me-2 d-block lh-1 pb-2 opacity-75">Quà giới thiệu</span>
+											<span class="fs-h4 fw-bold me-2 d-block lh-1 pb-2 opacity-75">Quà giới
+												thiệu</span>
 											<span class="fs-h2 fw-bolder">Nhận tiền triệu</span>
 										</div>
-										<span
-											class="fw-bold text-white fs-h6 mb-8 d-block opacity-75">Giới thiệu người khác mua gói tại {$config['website_name']} và bạn sẽ nhận được {$config['rebate_ratio']}% hoa hồng tương đương với giá trị gói họ mua</span>
-										<span
-											class="fw-bold text-white fs-h6 mb-8 d-block opacity-75">Sao chép liên kết giới thiệu bên dưới</span>
+										<span class="fw-bold text-white fs-h6 mb-8 d-block opacity-75">Giới thiệu người
+											khác mua gói tại {$config['website_name']} và bạn sẽ nhận được
+											{$config['rebate_ratio']}% hoa hồng tương đương với giá trị gói họ
+											mua</span>
+										<span class="fw-bold text-white fs-h6 mb-8 d-block opacity-75">Sao chép liên kết
+											giới thiệu bên dưới</span>
 										<div class="d-flex flex-column flex-sm-row">
 											<a type="button"
 												class="btn btn-primary flex-shrink-0 mr-2 fw-bold copy-text"
@@ -398,15 +404,33 @@
 	<div class="modal-dialog modal-dialog-centered modal-sm">
 		<div class="modal-content shadow-lg">
 			<div class="modal-body">
-				<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 copy-text hover-scale"
-					data-clipboard-text="{$subInfo}">Sao chép liên kết đăng ký</a>
-				<a class="btn btn-outline btn-active-light-primary d-flex flex-column hover-scale mb-1"
-					data-bs-toggle="modal" data-bs-target="#zero_modal_show_subscribe_qrcode">Tạo mã QR đăng kí</a>
-				<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-					onclick="oneclickImport('clash', '{$subInfo}&flag=clash')">Đồng bộ vào Clash</a>
-				<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-					onclick="oneclickImport('clash', '{$subInfo}&flag=meta')">Đồng bộ vào Clash Meta</a>
-
+				<center>
+					<a class="btn btn-outline btn-active-light-primary flex-column mb-1 copy-text hover-scale"
+						data-clipboard-text="{$subInfo}" style="display: inline-block; width: 250px; height: 50px;">
+						<i class="fa fa-copy" style="font-size:24px"></i>
+						Sao chép liên kết đăng ký
+					</a>
+					<a class="btn btn-outline btn-active-light-primary flex-column hover-scale mb-1"
+						style="display: inline-block; width: 250px; height: 50px;" data-bs-toggle="modal"
+						data-bs-target="#zero_modal_show_subscribe_qrcode">
+						<i class="fa fa-qrcode" style="font-size:24px"></i>
+						Tạo mã QR đăng kí
+					</a>
+					<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+						style="display: inline-block; width: 250px; height: 50px;"
+						onclick="oneclickImport('clash', '{$subInfo}&flag=clash')">
+						<img src="https://ht4g.pro/theme/galaxy/media/app_logo/clash.png" width="30px" height="30px"
+							style="display: inline-block;">
+						Đồng bộ vào Clash
+					</a>
+					<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+						style="display: inline-block; width: 250px; height: 50px;"
+						onclick="oneclickImport('clash', '{$subInfo}&flag=clash')">
+						<img src="https://ht4g.pro/theme/galaxy/media/app_logo/cross.png" width="30px" height="30px"
+							style="display: inline-block;">
+						Đồng bộ vào ClashCross
+					</a>
+				</center>
 			</div>
 		</div>
 	</div>
@@ -427,28 +451,78 @@
 <!-- mobile subscribe -->
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="zero_canvas_show_subscribe_info">
 	<div class="offcanvas-body">
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 copy-text hover-scale"
-			data-clipboard-text="{$subInfo}">Sao chép liên kết đăng ký</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column hover-scale mb-1" data-bs-toggle="modal"
-			data-bs-target="#zero_modal_show_subscribe_qrcode">Tạo mã QR đăng kí</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('singbox', '{$subInfo}&flag=sing-box')">Đồng bộ vào SingBox</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('shadowrocket', '{$subInfo}&flag=shadowrocket')">Đồng bộ vào Shadowrocket</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('surfboard', '{$subInfo}&flag=surfboard')">Đồng bộ vào Surfboard</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('sagernet', '{$subInfo}&flag=sagernet')">Đồng bộ vào SagerNet</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('quantumultx', '{$subInfo}')">Đồng bộ vào QuantumultX</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('surge', '{$subInfo}&flag=surge')">Đồng bộ vào Surge</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('clash', '{$subInfo}&flag=clash')">Đồng bộ vào Clash</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('clash', '{$subInfo}&flag=meta')">Đồng bộ vào Clash Meta</a>
-		<a class="btn btn-outline btn-active-light-primary d-flex flex-column mb-1 hover-scale"
-			onclick="oneclickImport('v2rayng', '{$subInfo}&flag=v2rayng')">Đồng bộ vào V2rayNG</a>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 copy-text hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;" data-clipboard-text="{$subInfo}">
+			<i class="fa fa-copy" style="font-size:24px"></i>
+			Sao chép liên kết đăng ký
+		</a>
+		<a class="btn btn-outline btn-active-light-primary flex-column hover-scale mb-1"
+			style="display: inline-block; width: 370px; height: 50px;" data-bs-toggle="modal"
+			data-bs-target="#zero_modal_show_subscribe_qrcode">
+			<i class="fa fa-qrcode" style="font-size:24px"></i>
+			Tạo mã QR đăng kí
+		</a>
+		<div style="text-align: center; position: relative;">
+			<hr style="border: none; height: 1px; background-color: black; width: 100%;">
+			<span
+				style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 0 10px;">IOS</span>
+		</div>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('shadowrocket', '{$subInfo}&flag=shadowrocket')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/shadowrocket.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào Shadowrocket</a>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('streisand', '{$subInfo}')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/streisand.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào Streisand</a>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('quantumultx', '{$subInfo}')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/quantumultx.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào QuantumultX</a>
+		<!--<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('surge', '{$subInfo}&flag=surge')">Đồng bộ vào Surge</a>-->
+		<div style="text-align: center; position: relative;">
+			<hr style="border: none; height: 1px; background-color: black; width: 100%;">
+			<span
+				style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 0 10px;">ANDROID
+				& IOS</span>
+		</div>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('singbox', '{$subInfo}&flag=sing-box')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/singbox.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào SingBox</a>
+		<div style="text-align: center; position: relative;">
+			<hr style="border: none; height: 1px; background-color: black; width: 100%;">
+			<span
+				style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 0 10px;">ANDROID
+			</span>
+		</div>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('clash', '{$subInfo}&flag=clash')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/clash.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào Clash</a>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;" onclick="oneclickImport('clash', '{$subInfo}')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/nekobox.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào NekoBox</a>
+		<a class="btn btn-outline btn-active-light-primary flex-column mb-1 hover-scale"
+			style="display: inline-block; width: 370px; height: 50px;"
+			onclick="oneclickImport('v2rayng', '{$subInfo}&flag=v2rayng')">
+			<img src="https://ht4g.pro/theme/galaxy/media/app_logo/v2rayng.png" width="30px"
+				style="display: inline-block;">
+			Đồng bộ vào V2rayNG</a>
 	</div>
 </div>
 {include file='include/global/scripts.tpl'}
