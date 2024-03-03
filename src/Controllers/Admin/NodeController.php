@@ -17,7 +17,7 @@ class NodeController extends AdminController
         $table_config['total_column'] = [
             
             'id'                      => 'ID',
-            'online'                  => 'Trạng thái<i class="bi bi-question-circle ms-1" data-bs-toggle="tooltip" title="Màu đỏ có là ngoại tuyến, màu xanh là trực tuyến"></i>',
+            'online'                  => 'Trạng thái<i class="bi bi-question-circle ms-1" data-bs-toggle="tooltip" title="Màu đỏ là ngoại tuyến, màu xanh là trực tuyến"></i>',
             'name'                    => 'Tên máy chủ',
             'online_user'             => 'Đang online',           
             'type'                    => 'Loại',
